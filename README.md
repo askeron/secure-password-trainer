@@ -11,6 +11,6 @@
 ### values for example data
 * the salt postfix is `example`
 * the three passwords to train are
-** `test`
-** `hello`
-** `world`
+  * `test`
+  * `hello`
+  * `world`
