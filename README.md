@@ -4,4 +4,13 @@
 ![Node.js CI](https://github.com/askeron/password-trainer/workflows/Node.js%20CI/badge.svg)
 ![GitHub](https://img.shields.io/github/license/askeron/password-trainer)
 
-documentation will come soon
+## run with example data
+
+`node index.js --datafile=example-data.json`
+
+### values for example data
+* the salt postfix is `example`
+* the three passwords to train are
+** `test`
+** `hello`
+** `world`
