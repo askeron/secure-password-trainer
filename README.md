@@ -14,3 +14,7 @@
   * `test`
   * `hello`
   * `world`
+
+## demo
+
+[![asciicast](https://asciinema.org/a/396543.svg)](https://asciinema.org/a/396543)
