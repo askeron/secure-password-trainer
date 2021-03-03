@@ -11,11 +11,7 @@ const iterations = 100_000
 const args = require("args-parser")(process.argv)
 
 // values for example default data: saltPostfix is "example" and the passwords are "test", "hello" and "world"
-const data = args.datafile ? JSON.parse(fs.readFileSync(args.datafile)) : {
-  shortHashLength: 5,
-  passwordShortHashes: ["b4d80", "260fa", "ef82a"],
-  saltPrefix: "6de6b9a72e7c425454878193b68f1cf3"
-}
+const data = JSON.parse(fs.readFileSync(args.datafile))
 
 const salt = data.saltPrefix + readlineSync.question("Salt Postfix?\n", { hideEchoBack: true })
 

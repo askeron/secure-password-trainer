@@ -1,0 +1,5 @@
+{
+  "shortHashLength": 5,
+  "passwordShortHashes": ["b4d80", "260fa", "ef82a"],
+  "saltPrefix": "6de6b9a72e7c425454878193b68f1cf3"
+}
