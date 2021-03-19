@@ -14,6 +14,9 @@ const args = require("args-parser")(process.argv)
 const data = JSON.parse(fs.readFileSync(args.datafile))
 
 const salt = data.saltPrefix + readlineSync.question("Salt Postfix?\n", { hideEchoBack: true })
+if (salt == "/exit") {
+  process.exit(0)
+}
 
 let input
 while (data.passwordShortHashes.length > 0) {
