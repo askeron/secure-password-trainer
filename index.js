@@ -13,10 +13,11 @@ const args = require("args-parser")(process.argv)
 // values for example default data: saltPostfix is "example" and the passwords are "test", "hello" and "world"
 const data = JSON.parse(fs.readFileSync(args.datafile))
 
-const salt = data.saltPrefix + readlineSync.question("Salt Postfix?\n", { hideEchoBack: true })
-if (salt == "/exit") {
+const saltPostfix = readlineSync.question("Salt Postfix?\n", { hideEchoBack: true })
+if (saltPostfix == "/exit") {
   process.exit(0)
 }
+const salt = data.saltPrefix + saltPostfix
 
 let input
 while (data.passwordShortHashes.length > 0) {
